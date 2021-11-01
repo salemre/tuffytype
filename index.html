@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Tuffy Types</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html"> CSUF Tuffy Types </a></h1>
+    </header>
+    <main>
+
+      <div class="typing-container">
+		<!-- timer selection related code by salem-->
+		<label class="timer textcolor">Select Timer:
+			<select name="timer" id="timer1" class ="backcolor" selected onchange=timer_change();>
+				<option value="0">Select time now</option>
+				<option value="1">15 seconds</option>
+				<option value="2">30 Seconds</option>
+				<option value="3">45 Seconds</option>
+				<option value="4">60 seconds</option>
+			</select>
+		</label>
+	  
+        <h2 id="word-count">Words Typed: 0</h4>
+        <h2 id="character-count">Characters Typed: 0</h4>
+        <h2 id="error-count">Errors: 0</h4>
+        <p class="quote-display" id="generated-quote"></p>
+        <div class="typing-container-row">
+          <h3 id="text-field"></h3>
+        </div>
+  
+        <h4 class="timer" id="timer">Seconds Remaining: 0</h4>
+        <h4 id="wordspermin">WPM: 0</h4>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
